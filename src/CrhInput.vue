@@ -1,5 +1,5 @@
 <template>
-    <div class="crh-input container">
+    <div id="crhInput" class="crh-input container">
         <slot name="label"/>
 
         <!-- 3 or more if checks every call ? -->
@@ -34,7 +34,9 @@ export default {
         TextInput,
         SelectInput,
     },
-    props: [{
+    methods: {
+    },
+    props: {
         /**
          * Defines which input type should be rendered
          * Could be a Number and possibly an enum for types.
@@ -48,11 +50,7 @@ export default {
             type: String,
             required: true,
         }
-    }]
+    }
 }
 </script>
-
-<style lang="sass" scoped>
-
-</style>
 
